@@ -1,6 +1,5 @@
 # Function to display the menu options
 def display_menu():
-   
     print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
@@ -16,8 +15,8 @@ def main():
         choice = input("Enter your choice: ")  # Get the user's choice
 
         if choice == '1':
-            # Prompt user to add an item
-            item = input("Enter the name of the item to add: ")
+            # Prompt user to add an item (updated prompt to match the required format)
+            item = input("Enter the item to add: ")
             shopping_list.append(item)  # Add the item to the list
             print(f"'{item}' has been added to your shopping list.")
         
@@ -51,6 +50,7 @@ def main():
 # Entry point of the script
 if __name__ == "__main__":
     main()
+
 
 
 
