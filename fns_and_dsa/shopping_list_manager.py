@@ -1,4 +1,4 @@
-# Function to display the menu options
+
 def display_menu():
     print("Shopping List Manager")
     print("1. Add Item")
@@ -6,7 +6,7 @@ def display_menu():
     print("3. View List")
     print("4. Exit")
 
-# Main function to manage the shopping list
+
 def main():
     shopping_list = []  # Initialize an empty list for shopping items
 
@@ -30,7 +30,7 @@ def main():
                 print(f"'{item}' not found in your shopping list.")
         
         elif choice == '3':
-            # View the current shopping list
+         
             if shopping_list:
                 print("\nYour Shopping List:")
                 for index, item in enumerate(shopping_list, 1):
@@ -39,15 +39,12 @@ def main():
                 print("Your shopping list is empty.")
         
         elif choice == '4':
-            # Exit the program
-            print("Goodbye!")
-            break  # Exit the loop and the program
         
-        else:
-            # Handle invalid choices
+            print("Goodbye!")
+            break  
             print("Invalid choice. Please try again.")
 
-# Entry point of the script
+
 if __name__ == "__main__":
     main()
 
